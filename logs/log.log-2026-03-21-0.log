@@ -1,0 +1,548 @@
+2026-03-21 15:00:44.923 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 19720 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 15:00:44.923 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 15:00:45.842 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 15:00:45.842 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:00:45.842 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 15:00:45.842 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 15:00:45.895 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 15:00:45.895 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 945 ms
+2026-03-21 15:00:46.721 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 15:00:46.765 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:00:46.773 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 15:00:46.783 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 2.121 seconds (process running for 2.659)
+2026-03-21 15:00:47.089 [RMI TCP Connection(4)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 15:00:47.089 [RMI TCP Connection(4)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 15:00:47.090 [RMI TCP Connection(4)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 15:00:47.090 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 15:00:47.252 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de3297b
+2026-03-21 15:00:47.257 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 15:03:46.396 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-21 15:03:46.397 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-21 15:05:13.504 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-21 15:05:13.505 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-21 15:07:46.026 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-21 15:07:46.027 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-21 15:08:52.164 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 15:08:52.259 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 15:08:52.275 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 15:08:52.291 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 15:15:57.089 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 10992 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 15:15:57.090 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 15:15:57.947 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 15:15:57.956 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:15:57.957 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 15:15:57.957 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 15:15:57.994 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 15:15:57.994 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 884 ms
+2026-03-21 15:15:58.620 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 15:15:58.649 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:15:58.655 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 15:15:58.664 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.787 seconds (process running for 2.215)
+2026-03-21 15:15:58.856 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 15:15:58.856 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 15:15:58.857 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 15:15:58.856 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 15:15:58.995 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4226dc2d
+2026-03-21 15:15:59.000 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 15:16:39.243 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-21 15:16:39.243 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-21 15:18:47.638 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 15:18:47.669 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 15:18:47.669 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 15:18:47.669 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 15:33:23.566 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 9884 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 15:33:23.568 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 15:33:24.359 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 15:33:24.367 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:33:24.367 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 15:33:24.367 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 15:33:24.405 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 15:33:24.406 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 818 ms
+2026-03-21 15:33:25.039 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 15:33:25.070 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:33:25.077 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 15:33:25.087 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.724 seconds (process running for 2.148)
+2026-03-21 15:33:25.614 [RMI TCP Connection(3)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 15:33:25.614 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 15:33:25.614 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2026-03-21 15:33:25.615 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 15:33:25.750 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@641168c7
+2026-03-21 15:33:25.756 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 15:35:07.566 [http-nio-8080-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-21 15:35:26.730 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 15:35:26.760 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 15:35:26.763 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 15:35:26.768 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 15:35:41.984 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 20616 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 15:35:41.985 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 15:35:42.784 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 15:35:42.791 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:35:42.792 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 15:35:42.792 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 15:35:42.825 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 15:35:42.826 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 820 ms
+2026-03-21 15:35:43.489 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 15:35:43.518 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:35:43.524 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 15:35:43.535 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.757 seconds (process running for 2.154)
+2026-03-21 15:35:44.077 [RMI TCP Connection(3)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 15:35:44.077 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 15:35:44.078 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 15:35:44.077 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 15:35:44.201 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c07c1b2
+2026-03-21 15:35:44.203 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 15:35:51.153 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-21 15:35:51.153 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-21 15:37:07.385 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 15:37:07.416 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 15:37:07.420 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 15:37:07.425 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 15:37:09.771 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 4216 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 15:37:09.773 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 15:37:10.650 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 15:37:10.656 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:37:10.658 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 15:37:10.658 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 15:37:10.695 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 15:37:10.695 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 900 ms
+2026-03-21 15:37:11.326 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 15:37:11.354 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 15:37:11.359 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 15:37:11.369 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.822 seconds (process running for 2.25)
+2026-03-21 15:37:11.816 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 15:37:11.816 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 15:37:11.816 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 15:37:11.817 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2026-03-21 15:37:11.945 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3531f18e
+2026-03-21 15:37:11.950 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 15:37:15.676 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-21 15:37:15.676 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-21 16:08:33.649 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 16:08:33.681 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 16:08:33.685 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 16:08:33.689 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 16:08:36.420 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 19868 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 16:08:36.421 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 16:08:37.245 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 16:08:37.253 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:08:37.254 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 16:08:37.254 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 16:08:37.296 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 16:08:37.296 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 853 ms
+2026-03-21 16:08:37.971 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 16:08:38.003 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:08:38.010 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 16:08:38.021 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.81 seconds (process running for 2.242)
+2026-03-21 16:08:38.469 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 16:08:38.470 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 16:08:38.470 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 16:08:38.471 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 16:08:38.614 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eaaf832
+2026-03-21 16:08:38.621 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 16:12:50.308 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-新增菜品
+2026-03-21 16:12:50.938 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.example.Service.impl.ChuanServiceImpl.addDish]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2026-03-21 16:12:50.940 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@2025554566 wrapping com.mysql.cj.jdbc.ConnectionImpl@7eaaf832] for JDBC transaction
+2026-03-21 16:12:50.942 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@2025554566 wrapping com.mysql.cj.jdbc.ConnectionImpl@7eaaf832] to manual commit
+2026-03-21 16:12:50.942 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-新增菜品ChuanServiceImpl
+2026-03-21 16:12:50.978 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-新增菜品成功ChuanServiceImpl
+2026-03-21 16:12:50.979 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2026-03-21 16:12:50.979 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@2025554566 wrapping com.mysql.cj.jdbc.ConnectionImpl@7eaaf832]
+2026-03-21 16:12:50.981 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@2025554566 wrapping com.mysql.cj.jdbc.ConnectionImpl@7eaaf832] after transaction
+2026-03-21 16:15:58.386 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 16:15:58.418 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 16:15:58.418 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 16:15:58.418 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 16:16:00.819 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 21036 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 16:16:00.819 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 16:16:01.619 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 16:16:01.626 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:16:01.627 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 16:16:01.627 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 16:16:01.662 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 16:16:01.663 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 820 ms
+2026-03-21 16:16:02.284 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 16:16:02.313 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:16:02.318 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 16:16:02.328 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.711 seconds (process running for 2.099)
+2026-03-21 16:16:02.447 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 16:16:02.447 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 16:16:02.447 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 16:16:02.448 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 16:16:02.582 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@548773d2
+2026-03-21 16:16:02.584 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 16:16:10.149 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-新增菜品
+2026-03-21 16:16:10.750 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.example.Service.impl.ChuanServiceImpl.addDish]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2026-03-21 16:16:10.753 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1539984517 wrapping com.mysql.cj.jdbc.ConnectionImpl@548773d2] for JDBC transaction
+2026-03-21 16:16:10.753 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1539984517 wrapping com.mysql.cj.jdbc.ConnectionImpl@548773d2] to manual commit
+2026-03-21 16:16:10.754 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-新增菜品ChuanServiceImpl
+2026-03-21 16:16:10.784 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2026-03-21 16:16:10.785 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@1539984517 wrapping com.mysql.cj.jdbc.ConnectionImpl@548773d2]
+2026-03-21 16:16:10.791 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1539984517 wrapping com.mysql.cj.jdbc.ConnectionImpl@548773d2] after transaction
+2026-03-21 16:16:10.791 [http-nio-8080-exec-1] ERROR com.example.Controller.ChuanController-添加菜品失败，回滚事务
+2026-03-21 16:16:11.051 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: 添加菜品失败] with root cause
+java.lang.RuntimeException: 添加菜品失败
+	at com.example.Controller.ChuanController.addDish(ChuanController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-03-21 16:17:48.608 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 16:17:48.635 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 16:17:48.638 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 16:17:48.643 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 16:43:27.853 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 4876 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 16:43:27.855 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 16:43:28.596 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 16:43:28.603 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:43:28.603 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 16:43:28.603 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 16:43:28.636 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 16:43:28.636 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 761 ms
+2026-03-21 16:43:29.211 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 16:43:29.237 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:43:29.243 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 16:43:29.252 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.599 seconds (process running for 1.98)
+2026-03-21 16:43:29.441 [RMI TCP Connection(3)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 16:43:29.442 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 16:43:29.442 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2026-03-21 16:43:29.442 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 16:43:29.559 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b86cbaa
+2026-03-21 16:43:29.565 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 16:43:33.207 [http-nio-8080-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Integer is not present]
+2026-03-21 16:44:05.534 [http-nio-8080-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Integer is not present]
+2026-03-21 16:44:28.040 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-21 16:44:28.640 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-修改菜品
+2026-03-21 16:44:28.643 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.example.Service.impl.ChuanServiceImpl.updateDish]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2026-03-21 16:44:28.645 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1228498991 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b86cbaa] for JDBC transaction
+2026-03-21 16:44:28.646 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1228498991 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b86cbaa] to manual commit
+2026-03-21 16:44:28.647 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-修改菜品ChuanServiceImpl
+2026-03-21 16:44:28.654 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-修改菜品成功ChuanServiceImpl
+2026-03-21 16:44:28.654 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2026-03-21 16:44:28.654 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1228498991 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b86cbaa]
+2026-03-21 16:44:28.658 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1228498991 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b86cbaa] after transaction
+2026-03-21 16:50:20.588 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 16:50:20.670 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 16:50:20.681 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 16:50:20.693 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 16:56:07.736 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 18264 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 16:56:07.738 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 16:56:08.524 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 16:56:08.531 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:56:08.533 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 16:56:08.533 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 16:56:08.570 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 16:56:08.571 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 811 ms
+2026-03-21 16:56:09.207 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 16:56:09.238 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 16:56:09.246 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 16:56:09.256 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.893 seconds (process running for 3.038)
+2026-03-21 16:56:09.660 [RMI TCP Connection(1)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 16:56:09.660 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 16:56:09.661 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 16:56:09.661 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 16:56:09.791 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c798e28
+2026-03-21 16:56:09.793 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 16:56:41.373 [http-nio-8080-exec-3] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2026-03-21 16:57:08.722 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-删除菜品
+2026-03-21 16:57:08.723 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-21 16:57:08.798 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.example.Service.impl.ChuanServiceImpl.deleteDish]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2026-03-21 16:57:08.798 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@679906678 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c798e28] for JDBC transaction
+2026-03-21 16:57:08.800 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@679906678 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c798e28] to manual commit
+2026-03-21 16:57:08.801 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-删除菜品ChuanServiceImpl
+2026-03-21 16:57:08.810 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-删除菜品成功ChuanServiceImpl
+2026-03-21 16:57:08.813 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2026-03-21 16:57:08.813 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@679906678 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c798e28]
+2026-03-21 16:57:08.817 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@679906678 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c798e28] after transaction
+2026-03-21 16:57:41.287 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 16:57:41.323 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 16:57:41.326 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 16:57:41.331 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 17:17:41.181 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 8384 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 17:17:41.182 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 17:17:41.974 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 17:17:41.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:17:41.982 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 17:17:41.982 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 17:17:42.019 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 17:17:42.019 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 814 ms
+2026-03-21 17:17:42.648 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 17:17:42.678 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:17:42.684 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 17:17:42.695 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.722 seconds (process running for 2.102)
+2026-03-21 17:17:43.263 [RMI TCP Connection(1)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 17:17:43.263 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 17:17:43.264 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 17:17:43.264 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 17:17:43.389 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70f02750
+2026-03-21 17:17:43.394 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 17:18:28.404 [http-nio-8080-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "filter"]
+2026-03-21 17:18:52.732 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-21 17:18:52.735 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.Mapper.ChuanMapper.searchDishes] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.Mapper.ChuanMapper.searchDishes
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.searchDishes(Unknown Source)
+	at com.example.Service.impl.ChuanServiceImpl.searchDishes(ChuanServiceImpl.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.example.Service.impl.ChuanServiceImpl$$SpringCGLIB$$0.searchDishes(<generated>)
+	at com.example.Controller.ChuanController.searchDishes(ChuanController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-03-21 17:20:29.362 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 17:20:29.391 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 17:20:29.394 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 17:20:29.398 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 17:20:30.786 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 21720 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 17:20:30.788 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 17:20:31.599 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 17:20:31.606 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:20:31.606 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 17:20:31.606 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 17:20:31.640 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 17:20:31.640 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 831 ms
+2026-03-21 17:20:32.291 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 17:20:32.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:20:32.322 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 17:20:32.333 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.752 seconds (process running for 2.165)
+2026-03-21 17:20:32.866 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 17:20:32.866 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 17:20:32.865 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 17:20:32.868 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2026-03-21 17:20:32.988 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@760bba0f
+2026-03-21 17:20:32.994 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 17:20:37.790 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-21 17:20:37.794 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.Mapper.ChuanMapper.searchDishes] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.Mapper.ChuanMapper.searchDishes
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.searchDishes(Unknown Source)
+	at com.example.Service.impl.ChuanServiceImpl.searchDishes(ChuanServiceImpl.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.example.Service.impl.ChuanServiceImpl$$SpringCGLIB$$0.searchDishes(<generated>)
+	at com.example.Controller.ChuanController.searchDishes(ChuanController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-03-21 17:24:19.682 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 17:24:19.711 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 17:24:19.714 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 17:24:19.719 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 17:24:21.112 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 2108 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 17:24:21.113 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 17:24:21.932 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 17:24:21.939 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:24:21.940 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 17:24:21.940 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 17:24:21.973 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 17:24:21.973 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 839 ms
+2026-03-21 17:24:22.641 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 17:24:22.669 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:24:22.675 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 17:24:22.686 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.775 seconds (process running for 2.169)
+2026-03-21 17:24:23.202 [RMI TCP Connection(1)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 17:24:23.202 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 17:24:23.203 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 17:24:23.204 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 17:24:23.334 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7201da61
+2026-03-21 17:24:23.336 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 17:25:01.880 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-21 17:25:02.154 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-21 17:25:02.155 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-21 17:26:54.935 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-21 17:26:54.968 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-21 17:26:54.971 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-21 17:26:54.977 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-21 17:26:56.371 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 11220 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-21 17:26:56.372 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-21 17:26:57.179 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-21 17:26:57.185 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:26:57.185 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-21 17:26:57.185 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-21 17:26:57.220 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-21 17:26:57.220 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 827 ms
+2026-03-21 17:26:57.901 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-21 17:26:57.930 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-21 17:26:57.937 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-21 17:26:57.948 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.781 seconds (process running for 2.177)
+2026-03-21 17:26:58.475 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21 17:26:58.475 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-21 17:26:58.476 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-21 17:26:58.476 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-21 17:26:58.616 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9a133
+2026-03-21 17:26:58.618 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-21 17:27:05.063 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-21 17:27:05.133 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-21 17:27:05.133 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-条件搜索

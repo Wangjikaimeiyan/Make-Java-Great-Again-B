@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>川菜AI测试（增强版）</title>
+    <style>
+        body { font-family: system-ui; max-width: 600px; margin: 20px auto; padding: 0 10px; }
+        #chat { border: 1px solid #ccc; height: 400px; overflow-y: auto; padding: 10px; margin-bottom: 10px; background: #fafafa; }
+        .user { color: #0066cc; margin: 5px 0; font-weight: bold; }
+        .ai { color: #009900; margin: 5px 0; white-space: pre-wrap; }
+        .error { color: #cc0000; margin: 5px 0; }
+        #input-area { display: flex; gap: 8px; }
+        #question { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        #send { padding: 8px 16px; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        #send:disabled { background: #999; cursor: not-allowed; }
+        #cancel { padding: 8px 16px; background: #ccc; color: black; border: none; border-radius: 4px; cursor: pointer; }
+        #cancel:disabled { background: #eee; cursor: not-allowed; }
+        #log { border: 1px solid #ddd; height: 100px; overflow-y: auto; font-size: 12px; background: #f0f0f0; padding: 4px; margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <div id="chat"></div>
+    <div id="input-area">
+        <input type="text" id="question" placeholder="输入问题，如：麻婆豆腐的特点">
+        <button id="send">发送</button>
+        <button id="cancel" disabled>取消</button>
+    </div>
+    <div id="log">[调试信息] 页面加载完成<br></div>
+
+    <script>
+        const chatDiv = document.getElementById('chat');
+        const questionInput = document.getElementById('question');
+        const sendBtn = document.getElementById('send');
+        const cancelBtn = document.getElementById('cancel');
+        const logDiv = document.getElementById('log');
+
+        let currentAiDiv = null;
+        let timer = null;
+        let charQueue = [];
+        let abortController = null;
+
+        function log(msg) {
+            console.log(msg);
+            logDiv.innerHTML += msg + '<br>';
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function addMessage(role, text) {
+            const div = document.createElement('div');
+            div.className = role;
+            div.textContent = (role === 'user' ? '你：' : (role === 'error' ? '⚠️ ' : 'AI：')) + text;
+            chatDiv.appendChild(div);
+            chatDiv.scrollTop = chatDiv.scrollHeight;
+        }
+
+        function createAiContainer() {
+            const div = document.createElement('div');
+            div.className = 'ai';
+            div.textContent = 'AI：';
+            chatDiv.appendChild(div);
+            return div;
+        }
+
+        function typeNextChar() {
+            if (charQueue.length === 0) {
+                timer = null;
+                log('✅ 所有字符显示完成');
+                return;
+            }
+            const char = charQueue.shift();
+            if (char === '\n') {
+                currentAiDiv.appendChild(document.createElement('br'));
+            } else {
+                currentAiDiv.appendChild(document.createTextNode(char));
+            }
+            chatDiv.scrollTop = chatDiv.scrollHeight;
+            timer = setTimeout(typeNextChar, 30);
+        }
+
+        function appendToAi(text) {
+            if (!text) return;
+            log('📦 收到数据块: ' + text.substring(0, 30) + (text.length > 30 ? '...' : ''));
+            if (!currentAiDiv) currentAiDiv = createAiContainer();
+            charQueue.push(...text.split(''));
+            if (!timer) {
+                log('▶️ 启动打字机');
+                typeNextChar();
+            }
+        }
+
+        async function send() {
+            const question = questionInput.value.trim();
+            if (!question) return;
+
+            // 取消之前的请求（如果有）
+            if (abortController) {
+                abortController.abort();
+                log('🚫 取消上一个请求');
+            }
+
+            addMessage('user', question);
+            questionInput.value = '';
+            sendBtn.disabled = true;
+            cancelBtn.disabled = false;
+
+            // 重置AI回复状态
+            if (timer) clearTimeout(timer);
+            timer = null;
+            charQueue = [];
+            currentAiDiv = null;
+
+            abortController = new AbortController();
+            const { signal } = abortController;
+
+            log('🚀 发送问题: ' + question);
+            log('🌐 请求 URL: http://127.0.0.1:8080/Chuan/ai/chat');
+
+            try {
+                const formData = new URLSearchParams({ question });
+                const response = await fetch('http://127.0.0.1:8080/Chuan/ai/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: formData,
+                    signal
+                });
+
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                log('✅ 响应状态: ' + response.status);
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = '';
+
+                while (true) {
+                    const { value, done } = await reader.read();
+                    if (done) {
+                        log('🔚 流结束');
+                        break;
+                    }
+
+                    log(`📥 收到 chunk，长度 ${value.length}`);
+                    buffer += decoder.decode(value, { stream: true });
+
+                    let boundary = buffer.indexOf('\n\n');
+                    while (boundary !== -1) {
+                        const msg = buffer.slice(0, boundary);
+                        buffer = buffer.slice(boundary + 2);
+                        log('📨 解析到消息: ' + msg.substring(0, 40));
+                        if (msg.startsWith('data:')) {
+                            const data = msg.slice(5).trim();
+                            if (data) appendToAi(data);
+                        }
+                        boundary = buffer.indexOf('\n\n');
+                    }
+                }
+
+                if (buffer.trim()) {
+                    log('📨 剩余 buffer: ' + buffer);
+                    if (buffer.startsWith('data:')) {
+                        const data = buffer.slice(5).trim();
+                        if (data) appendToAi(data);
+                    }
+                }
+            } catch (err) {
+                if (err.name === 'AbortError') {
+                    log('⏸️ 请求被用户取消');
+                    addMessage('error', '请求已取消');
+                } else {
+                    log('❌ 错误: ' + err.message);
+                    addMessage('error', '请求失败: ' + err.message);
+                }
+            } finally {
+                sendBtn.disabled = false;
+                cancelBtn.disabled = true;
+                abortController = null;
+                log('🔓 按钮恢复');
+            }
+        }
+
+        function cancel() {
+            if (abortController) {
+                abortController.abort();
+                log('🚫 用户点击取消');
+            }
+        }
+
+        // 页面卸载时取消请求，避免后端发送时发现连接已关闭（但此时后端仍可能记录错误）
+        window.addEventListener('beforeunload', () => {
+            if (abortController) {
+                abortController.abort();
+            }
+        });
+
+        sendBtn.addEventListener('click', send);
+        cancelBtn.addEventListener('click', cancel);
+        questionInput.addEventListener('keypress', e => {
+            if (e.key === 'Enter') send();
+        });
+    </script>
+</body>
+</html>

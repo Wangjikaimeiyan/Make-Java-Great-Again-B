@@ -1,0 +1,412 @@
+2026-03-25 17:58:42.338 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 6404 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-25 17:58:42.339 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-25 17:58:43.422 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-25 17:58:43.430 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-25 17:58:43.431 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-25 17:58:43.432 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-25 17:58:43.471 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-25 17:58:43.472 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1107 ms
+2026-03-25 17:58:44.358 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-25 17:58:44.398 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-25 17:58:44.405 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 17:58:44.416 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 2.346 seconds (process running for 2.879)
+2026-03-25 17:58:44.937 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 17:58:44.937 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-25 17:58:44.939 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2026-03-25 17:58:44.939 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-25 17:58:45.118 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@667c1640
+2026-03-25 17:58:45.120 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-25 18:03:00.278 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-25 18:03:00.314 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-25 18:03:00.318 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-25 18:03:00.324 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-25 18:03:02.275 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 1932 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-25 18:03:02.277 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-25 18:03:03.121 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-25 18:03:03.127 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-25 18:03:03.128 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-25 18:03:03.133 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-25 18:03:03.169 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-25 18:03:03.170 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 869 ms
+2026-03-25 18:03:03.881 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-25 18:03:03.915 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-25 18:03:03.921 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 18:03:03.933 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.875 seconds (process running for 2.34)
+2026-03-25 18:03:04.288 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 18:03:04.288 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-25 18:03:04.289 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-25 18:03:04.290 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-25 18:03:04.428 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@746413a2
+2026-03-25 18:03:04.430 [RMI TCP Connection(1)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-25 18:06:23.390 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-25 18:06:23.473 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-25 18:06:23.479 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-25 18:06:23.498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-25 18:06:26.102 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 10604 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-25 18:06:26.103 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-25 18:06:26.943 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-25 18:06:26.950 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-25 18:06:26.952 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-25 18:06:26.952 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-25 18:06:26.984 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-25 18:06:26.985 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 858 ms
+2026-03-25 18:06:27.709 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-25 18:06:27.740 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-25 18:06:27.747 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 18:06:27.759 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.871 seconds (process running for 2.279)
+2026-03-25 18:06:28.173 [RMI TCP Connection(3)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 18:06:28.173 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-25 18:06:28.174 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-25 18:06:28.174 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-25 18:06:28.316 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23f18947
+2026-03-25 18:06:28.319 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-25 18:09:45.696 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:09:45.696 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:09:59.137 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:09:59.138 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:10:57.289 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:10:57.289 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:11:07.916 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:11:07.916 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:11:44.403 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:11:44.404 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:12:59.198 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:12:59.198 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:20:01.856 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:20:01.856 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:20:01.869 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:20:01.869 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:23:56.206 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:23:56.206 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:24:04.478 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:24:04.478 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:24:15.847 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:24:15.847 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:24:19.403 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:24:19.404 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:24:22.991 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:24:22.991 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:25:20.998 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:25:20.998 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:25:22.772 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:25:22.772 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:26:14.598 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:26:14.599 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:28:25.018 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:28:25.018 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:29:12.772 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:29:12.772 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:31:46.485 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:31:46.485 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:33:03.922 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:33:03.923 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:33:33.956 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:33:33.956 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:33:37.880 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:33:37.880 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:34:58.462 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:34:58.463 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:35:05.547 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:35:05.547 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:35:14.469 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:35:14.570 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:35:14.570 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:35:15.575 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:35:15.579 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:35:15.579 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:35:43.182 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:35:43.183 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:35:50.193 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:35:50.205 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:35:50.206 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:35:54.235 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:35:54.239 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:35:54.239 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:36:00.057 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:36:00.059 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:36:00.059 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:36:01.253 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:36:01.256 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:36:01.256 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:36:02.536 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:36:02.539 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:36:02.539 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:36:06.783 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:36:06.788 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:36:06.788 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:36:10.191 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 18:36:10.192 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 18:36:16.381 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索ChuanServiceImpl
+2026-03-25 18:36:16.385 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-条件搜索成功ChuanServiceImpl
+2026-03-25 18:36:16.385 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-条件搜索
+2026-03-25 18:39:15.274 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-25 18:39:15.306 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-25 18:39:15.310 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-25 18:39:15.313 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-03-25 18:39:17.690 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 9836 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-25 18:39:17.691 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-25 18:39:18.507 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-25 18:39:18.515 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-25 18:39:18.516 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-25 18:39:18.516 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-25 18:39:18.549 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-25 18:39:18.551 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 836 ms
+2026-03-25 18:39:19.255 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-25 18:39:19.285 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-25 18:39:19.291 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 18:39:19.302 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 1.834 seconds (process running for 2.267)
+2026-03-25 18:39:19.746 [RMI TCP Connection(1)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 18:39:19.746 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-25 18:39:19.746 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-25 18:39:19.747 [RMI TCP Connection(1)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-25 18:39:19.883 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e009e28
+2026-03-25 18:39:19.885 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-25 18:39:38.706 [http-nio-8080-exec-1] INFO  com.example.Filter.TokenFilter-令牌验证失败
+2026-03-25 19:02:41.842 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 15660 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-25 19:02:41.843 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-25 19:02:42.833 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-25 19:02:42.843 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-25 19:02:42.844 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-25 19:02:42.845 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-25 19:02:42.898 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-25 19:02:42.898 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1029 ms
+2026-03-25 19:02:43.731 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-25 19:02:43.765 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-25 19:02:43.772 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 19:02:43.783 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 2.191 seconds (process running for 2.68)
+2026-03-25 19:02:44.103 [RMI TCP Connection(3)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 19:02:44.104 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-25 19:02:44.104 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2026-03-25 19:02:44.104 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-25 19:02:44.267 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f6951ed
+2026-03-25 19:02:44.269 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-25 19:11:03.481 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:11:03.482 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:11:07.684 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:11:07.685 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:11:32.466 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:11:32.467 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:11:34.244 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:11:34.245 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:11:37.414 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:11:37.415 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:12:38.209 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:12:38.209 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:21:19.293 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:21:19.293 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:24:23.464 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:24:23.465 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:25:48.091 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:25:48.091 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:38:27.519 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:38:27.520 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:38:31.017 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:38:31.018 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:39:18.990 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:39:18.990 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:40:40.838 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:40:40.839 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:41:20.192 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:41:20.192 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:44:23.343 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:44:23.343 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:44:28.354 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:44:28.354 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:44:30.120 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 19:44:30.120 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 19:44:35.832 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:44:35.832 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:49:28.446 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:49:28.446 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:52:34.177 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:52:34.177 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:53:33.517 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:53:33.517 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:53:34.330 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:53:34.330 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:53:34.584 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:53:34.585 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:56:58.930 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:56:58.930 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:56:59.509 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:56:59.510 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:57:00.034 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:57:00.035 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:58:31.556 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:58:31.557 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 19:59:09.114 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 19:59:09.114 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:01:26.794 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:01:26.795 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:01:28.257 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:01:28.257 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:01:29.592 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:01:29.593 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:01:30.120 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:01:30.120 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:02:16.362 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:02:16.363 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:02:17.610 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:02:17.611 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:02:20.136 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:02:20.137 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:03:31.129 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:03:31.129 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:03:34.837 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:03:34.837 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:05:02.159 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:05:02.159 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:05:04.346 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:05:04.346 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:05:08.121 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:05:08.121 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:06:35.326 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:06:35.326 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:06:38.208 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:06:38.208 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:06:39.265 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:06:39.266 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:07:03.387 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:07:03.387 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:07:14.350 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:07:14.350 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:08:00.175 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:08:00.175 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:08:11.898 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:08:11.899 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:08:25.990 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:08:25.991 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:08:28.629 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:08:28.629 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:08:30.779 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:08:30.779 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:11:56.841 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:11:56.841 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:12:28.289 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:12:28.290 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:16:23.725 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:16:23.726 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:16:24.969 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:16:24.969 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:16:32.851 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:16:32.851 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:19:23.408 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:19:23.408 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:19:24.636 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:19:24.636 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:19:26.591 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:19:26.592 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:19:34.496 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:19:34.496 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:19:36.963 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:19:36.964 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:20:08.172 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:20:08.173 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:20:10.167 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:20:10.168 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:02.874 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:02.874 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:05.043 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:05.043 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:07.933 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:07.933 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:20.485 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:20.485 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:21.853 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:21.853 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:24.170 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:21:24.170 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:21:25.281 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:25.281 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:27.039 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:27.039 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:30.521 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:30.523 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:21:36.721 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:21:36.721 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:22:58.976 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:22:58.976 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:23:00.641 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:23:00.641 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:23:09.004 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:23:09.005 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:23:09.464 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:23:09.464 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:23:10.998 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:23:10.998 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:23:24.073 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:23:24.074 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:23:36.557 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:23:36.557 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:23:37.467 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:23:37.467 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:23:56.313 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:23:56.314 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:23:57.545 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:23:57.546 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:24:02.646 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:24:02.647 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:24:06.831 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:24:06.832 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:24:26.898 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:24:26.898 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:26:26.708 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:26:26.708 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:26:28.435 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:26:28.435 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:30:13.313 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:30:13.314 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:30:14.485 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:30:14.485 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:31:16.081 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:31:16.081 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:31:17.305 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:31:17.305 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:36:33.962 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:36:33.962 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:36:35.328 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:36:35.328 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:41:24.017 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:41:24.017 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:41:25.418 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:41:25.418 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:44:22.056 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:44:22.056 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:44:23.418 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:44:23.419 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:45:11.875 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:45:11.875 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:45:12.892 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:45:12.892 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:46:15.833 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:46:15.833 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:46:16.572 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:46:16.572 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:54:48.002 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:54:48.002 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:54:49.618 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:54:49.618 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:55:52.575 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:55:52.575 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:56:53.947 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 20:56:53.947 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 20:56:55.332 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:56:55.332 [http-nio-8080-exec-7] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 20:57:06.506 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 20:57:06.506 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 21:01:17.546 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 21:01:17.546 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 21:01:32.316 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 21:01:32.316 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 21:23:10.507 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 21:23:10.507 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 21:23:11.569 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 21:23:11.569 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 21:26:54.403 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-25 21:26:54.404 [http-nio-8080-exec-10] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-25 21:26:56.083 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 21:26:56.083 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 21:27:14.926 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 21:27:14.926 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
+2026-03-25 21:27:47.504 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询单个菜品
+2026-03-25 21:27:47.504 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询单个菜品ChuanServiceImpl
