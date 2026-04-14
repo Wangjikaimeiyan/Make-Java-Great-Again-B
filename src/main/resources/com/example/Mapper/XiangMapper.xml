@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.Mapper.XiangMapper">
+    <update id="updateDish" parameterType="com.example.Pojo.Dish">
+        update dish
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="detail != null">detail = #{detail},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="category != null">category = #{category},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--搜索所有菜品,按照价格升序排列和名字-->
+    <select id="searchDishes" resultType="com.example.Pojo.Dish">
+        SELECT
+        id,
+        name,
+        price,
+        detail,
+        image,
+        category,
+        create_time,
+        update_time
+        FROM dining_db.dish
+        <where>
+            and category = 2
+            <if test="name != null and name != ''">
+                and name like concat('%', #{name}, '%')
+            </if>
+            <if test="price != null">
+                and price &lt;= #{price}
+            </if>
+        </where>
+        order by price asc
+    </select>
+</mapper>

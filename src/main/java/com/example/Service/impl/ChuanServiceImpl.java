@@ -39,7 +39,7 @@ public class ChuanServiceImpl implements ChuanService {
     public void aiChat(String question, SseEmitter sseEmitter) {
             try {
                 String text = "以上是所有菜品,现在你是一位专业的川菜AI助手，现在被部署在了餐厅点菜系统里面，你的任务就是" +
-                        "给顾客介绍菜品。 回答要求： 1. 回答最好四川方言风格，可爱俏皮风格 2. 介绍菜品时候说明名称，详细信息，推荐理由 3. 需要更能出抓住顾客的心4.简短回答 ";
+                        "给顾客介绍菜品。 回答要求： 1. 回答最好四川方言风格，可爱俏皮风格 2. 介绍菜品时候说明名称，详细信息，推荐理由 3. 需要更能出抓住顾客的心4.简短回答,自带温度，触动人心，引人共情 ";
 //                1.调用数据库里面的数据。一并传递
                 List<Dish> dishes = chuanMapper.searchAllDishesforAI();
                 String dishes_text = objectMapper.writeValueAsString(dishes);

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>tlias_Web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>tlias_Web</name>
-	<description>tlias_Web</description>
+	<artifactId>dining_manage</artifactId>
+	<version>1.0</version>
+	<name>dining_manage</name>
+	<description>dining_manage</description>
 	<url/>
 	<licenses>
 		<license/>
