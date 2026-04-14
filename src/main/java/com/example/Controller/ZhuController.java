@@ -4,6 +4,8 @@ import com.example.Pojo.Dish;
 import com.example.Pojo.Result;
 import com.example.Service.ZhuService;
 import com.example.Utils.AliyunOSSOperator;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,7 @@ import java.util.List;
 @Slf4j
 @RequestMapping("/Zhu")
 @RestController
+@Tag(name = "主食控制")
 public class ZhuController {
     @Autowired
     private ZhuService zhuService;
@@ -26,6 +29,7 @@ public class ZhuController {
 
     //    查询所有主食
     @GetMapping("/dishes")
+    @Operation(summary = "查询所有主食")
     public Result searchAllDishes() {
         log.info("查询所有主食");
         List<Dish> dishes = zhuService.searchAllDishes();
@@ -33,6 +37,7 @@ public class ZhuController {
     }
     //     Ai分析菜品
     @PostMapping(value = "/ai/chat",produces = "text/event-stream;charset=UTF-8")
+    @Operation(summary = "Ai分析菜品")
     public SseEmitter aiChat(String question) {
         log.info("Ai分析菜品");
         SseEmitter sseEmitter = new SseEmitter(60000L);
@@ -41,6 +46,7 @@ public class ZhuController {
     }
     //    查询单个菜品
     @GetMapping("/dish/{id}")
+    @Operation(summary = "查询单个主食")
     public Result searchDish(@PathVariable Integer id) {
         log.info("查询单个菜品");
         Dish dish = zhuService.searchDish(id);
@@ -48,6 +54,7 @@ public class ZhuController {
     }
     //    新增菜品
     @PostMapping("/dish")
+    @Operation(summary = "新增主食")
     public Result addDish(
             @RequestParam("name") String name,
             @RequestParam("price")BigDecimal price,
@@ -79,6 +86,7 @@ public class ZhuController {
     }
     //    修改菜品
     @PostMapping("/Updatadish")
+    @Operation(summary = "修改主食")
     public Result updateDish(
             @RequestParam("id") Integer id,
             @RequestParam("name") String name,
@@ -121,6 +129,7 @@ public class ZhuController {
     }
     //    删除菜品
     @DeleteMapping("/dish/{id}")
+    @Operation(summary = "删除主食")
     public Result deleteDish(@PathVariable Integer id) throws Exception {
         log.info("删除菜品");
 //        首先获取图片地址
@@ -142,6 +151,7 @@ public class ZhuController {
     }
     //    条件搜索
     @GetMapping("/dishes/filter")
+    @Operation(summary = "条件搜索主食")
     public Result searchDishes(
             @RequestParam(value = "name",required = false) String name,
             //        价格是最高价往下帅选
