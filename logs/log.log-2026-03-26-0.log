@@ -1,0 +1,22 @@
+2026-03-26 13:49:44.823 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 8328 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-26 13:49:44.823 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-26 13:49:45.825 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-26 13:49:45.835 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-26 13:49:45.836 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-26 13:49:45.837 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-26 13:49:45.878 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-26 13:49:45.879 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1023 ms
+2026-03-26 13:49:46.716 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-26 13:49:46.752 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-26 13:49:46.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-26 13:49:46.775 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 2.257 seconds (process running for 2.774)
+2026-03-26 13:49:46.974 [RMI TCP Connection(2)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-26 13:49:46.974 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-26 13:49:46.974 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-26 13:49:46.975 [RMI TCP Connection(2)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-03-26 13:49:47.142 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3afa2832
+2026-03-26 13:49:47.144 [RMI TCP Connection(3)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-26 13:49:51.302 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-26 13:49:51.302 [http-nio-8080-exec-1] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-26 15:57:19.790 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m1s151ms694µs500ns).
+2026-03-26 16:58:21.184 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s395ms23µs800ns).

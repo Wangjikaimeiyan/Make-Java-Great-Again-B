@@ -1,0 +1,81 @@
+2026-03-28 15:23:16.364 [main] INFO  com.example.DiningManageApplication-Starting DiningManageApplication using Java 17.0.12 with PID 17936 (D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage\target\classes started by Administrator in D:\work-develop-app\java\Web_AI_02\dining_manager\dining_manage)
+2026-03-28 15:23:16.365 [main] INFO  com.example.DiningManageApplication-No active profile set, falling back to 1 default profile: "default"
+2026-03-28 15:23:17.388 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-03-28 15:23:17.398 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 15:23:17.400 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-03-28 15:23:17.400 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-28 15:23:17.438 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-03-28 15:23:17.438 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1048 ms
+2026-03-28 15:23:18.367 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2026-03-28 15:23:18.401 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 15:23:18.407 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 15:23:18.418 [main] INFO  com.example.DiningManageApplication-Started DiningManageApplication in 2.302 seconds (process running for 2.851)
+2026-03-28 15:23:19.036 [RMI TCP Connection(3)-10.179.151.207] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 15:23:19.037 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-03-28 15:23:19.037 [RMI TCP Connection(3)-10.179.151.207] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2026-03-28 15:23:19.038 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-03-28 15:23:19.215 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee3dadd
+2026-03-28 15:23:19.217 [RMI TCP Connection(2)-10.179.151.207] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-03-28 15:23:40.341 [http-nio-8080-exec-1] INFO  com.example.Filter.TokenFilter-登录请求,放行
+2026-03-28 15:23:40.700 [http-nio-8080-exec-1] INFO  com.example.Utils.JwtUtils-令牌生成时间：Sat Mar 28 15:23:40 CST 2026，过期时间：Sun Mar 29 03:23:40 CST 2026
+2026-03-28 15:23:42.291 [http-nio-8080-exec-3] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:23:42.291 [http-nio-8080-exec-3] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:23:42.291 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:23:42.291 [http-nio-8080-exec-3] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:23:44.100 [http-nio-8080-exec-2] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:23:44.100 [http-nio-8080-exec-2] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:23:44.100 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:23:44.100 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:23:45.254 [http-nio-8080-exec-4] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:23:45.255 [http-nio-8080-exec-4] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:23:45.256 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:23:45.256 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:23:47.680 [http-nio-8080-exec-5] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:23:47.680 [http-nio-8080-exec-5] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:23:47.681 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:23:47.681 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:24:04.624 [http-nio-8080-exec-8] INFO  com.example.Filter.TokenFilter-请求头token为空
+2026-03-28 15:24:06.718 [http-nio-8080-exec-6] INFO  com.example.Filter.TokenFilter-登录请求,放行
+2026-03-28 15:24:06.732 [http-nio-8080-exec-6] INFO  com.example.Utils.JwtUtils-令牌生成时间：Sat Mar 28 15:24:06 CST 2026，过期时间：Sun Mar 29 03:24:06 CST 2026
+2026-03-28 15:24:07.852 [http-nio-8080-exec-9] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:24:07.852 [http-nio-8080-exec-9] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:24:07.852 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:24:07.852 [http-nio-8080-exec-9] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:25:40.448 [http-nio-8080-exec-7] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-28 15:26:55.122 [http-nio-8080-exec-1] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-28 15:29:17.743 [http-nio-8080-exec-2] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:29:17.743 [http-nio-8080-exec-2] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:29:17.745 [http-nio-8080-exec-2] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:29:17.745 [http-nio-8080-exec-2] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:29:25.015 [http-nio-8080-exec-4] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:29:25.015 [http-nio-8080-exec-4] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:29:25.017 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:29:25.018 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:30:16.315 [http-nio-8080-exec-5] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:30:16.315 [http-nio-8080-exec-5] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:30:16.318 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:30:16.318 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:30:59.212 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-28 15:36:35.181 [http-nio-8080-exec-9] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-28 15:37:10.955 [http-nio-8080-exec-10] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-28 15:37:35.078 [http-nio-8080-exec-3] INFO  com.example.Controller.ChuanController-Ai分析菜品
+2026-03-28 15:55:39.318 [http-nio-8080-exec-4] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:55:39.318 [http-nio-8080-exec-4] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:55:39.321 [http-nio-8080-exec-4] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:55:39.321 [http-nio-8080-exec-4] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:55:40.743 [http-nio-8080-exec-5] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:55:40.743 [http-nio-8080-exec-5] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:55:40.743 [http-nio-8080-exec-5] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:55:40.743 [http-nio-8080-exec-5] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:55:45.285 [http-nio-8080-exec-8] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:55:45.285 [http-nio-8080-exec-8] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:55:45.285 [http-nio-8080-exec-8] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:55:45.285 [http-nio-8080-exec-8] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 15:56:14.903 [http-nio-8080-exec-6] INFO  com.example.Filter.TokenFilter-当前员工id为:3
+2026-03-28 15:56:14.903 [http-nio-8080-exec-6] INFO  com.example.Filter.TokenFilter-令牌验证成功
+2026-03-28 15:56:14.903 [http-nio-8080-exec-6] INFO  com.example.Controller.ChuanController-查询所有川菜
+2026-03-28 15:56:14.903 [http-nio-8080-exec-6] INFO  com.example.Service.impl.ChuanServiceImpl-查询所有川菜ChuanServiceImpl
+2026-03-28 16:07:38.292 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 16:07:38.324 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-03-28 16:07:38.331 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-03-28 16:07:38.333 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
