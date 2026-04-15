@@ -110,7 +110,6 @@ public class ChuanController {
         dish.setPrice(price);
         dish.setDetail(detail);
         dish.setCategory(category);
-        dish.setUpdateTime(LocalDateTime.now());
         try {
             chuanService.updateDish(dish);
         } catch (Exception e) {
@@ -121,7 +120,10 @@ public class ChuanController {
             throw new RuntimeException("修改失败");
         }
         try {
-            aliyunOSSOperator.delete(oldImageUrl);
+            if (oldImageUrl != null)
+            {
+                aliyunOSSOperator.delete(oldImageUrl);
+            }
         } catch (Exception e) {
             throw new RuntimeException("删除图片出现问题");
         }

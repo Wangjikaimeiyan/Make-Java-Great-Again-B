@@ -2,6 +2,8 @@ package com.example.Mapper;
 
 
 import com.example.Pojo.Dish;
+import com.example.annotation.AutoFill;
+import com.example.enumrtation.OperationType;
 import org.apache.ibatis.annotations.*;
 
 import java.math.BigDecimal;
@@ -26,6 +28,7 @@ public interface ChuanMapper {
     void addDish(Dish dish);
 
     //      修改菜品
+    @AutoFill(value = OperationType.UPDATE)
     void updateDish(Dish dish);
 
     //      删除菜品
