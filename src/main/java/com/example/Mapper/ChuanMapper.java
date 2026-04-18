@@ -29,6 +29,7 @@ public interface ChuanMapper {
 
     //      修改菜品
     @AutoFill(value = OperationType.UPDATE)
+//    做约定：第一个参数是数据库表对应的实体类对象
     void updateDish(Dish dish);
 
     //      删除菜品

@@ -50,13 +50,15 @@ public class AutoFillUtils {
      */
     private static void fillInsertField(Object entity, LocalDateTime now /*Long userId*/) throws Exception {
         // 获取 set 方法
-        Method setCreateTime = getSetMethod(entity, AutoFillConstant.SET_CREATE_TIME, LocalDateTime.class);
+//        Method setCreateTime = getSetMethod(entity, AutoFillConstant.SET_CREATE_TIME, LocalDateTime.class);
+        Method setCreateTime = entity.getClass().getDeclaredMethod(AutoFillConstant.SET_CREATE_TIME, LocalDateTime.class);
         Method setUpdateTime = getSetMethod(entity, AutoFillConstant.SET_UPDATE_TIME, LocalDateTime.class);
 //        Method setCreateUser = getSetMethod(entity, AutoFillConstant.SET_CREATE_USER, Long.class);
 //        Method setUpdateUser = getSetMethod(entity, AutoFillConstant.SET_UPDATE_USER, Long.class);
 
         // 反射调用赋值
-        invokeSetMethod(setCreateTime, entity, now);
+//        invokeSetMethod(setCreateTime, entity, now);
+        setCreateTime.invoke(entity, now);
         invokeSetMethod(setUpdateTime, entity, now);
 //        invokeSetMethod(setCreateUser, entity, userId);
 //        invokeSetMethod(setUpdateUser, entity, userId);
