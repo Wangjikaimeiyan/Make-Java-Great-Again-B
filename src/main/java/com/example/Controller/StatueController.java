@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RequestMapping("/Statue")
+//@RestController("StatueController")自定义bean名称
 @RestController
 @Tag(name = "营业状态")
 //营业状态
