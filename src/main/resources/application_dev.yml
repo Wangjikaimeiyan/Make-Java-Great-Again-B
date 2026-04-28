@@ -1,0 +1,26 @@
+# 开发环境配置
+#APP_NAME: dining_manage
+#
+#REDIS_HOST: localhost
+#REDIS_PORT: 6379
+#REDIS_PASSWORD: 1234
+#REDIS_DATABASE: 3
+#
+#DATASOURCE_URL: jdbc:mysql://localhost:3306/dining_db
+#DATASOURCE_USERNAME: root
+#DATASOURCE_PASSWORD: 5678
+#
+#OLLAMA_BASE_URL: http://localhost:11434
+#OLLAMA_CHAT_MODEL: deepseek-r1:8b
+#
+#ALIYUN_OSS_ENDPOINT: https://oss-cn-beijing.aliyuncs.com
+#ALIYUN_OSS_BUCKET_NAME: java-date
+#ALIYUN_OSS_REGION: cn-beijing
+
+# 以下项有默认值，若不需要改动可省略
+# MULTIPART_MAX_FILE_SIZE: 1024MB
+# MULTIPART_MAX_REQUEST_SIZE: 1024MB
+# MYBATIS_MAP_UNDERSCORE: true
+# MYBATIS_LOG_IMPL: org.apache.ibatis.logging.stdout.StdOutImpl
+# LOGGING_LEVEL_JDBC: debug
+# DATASOURCE_DRIVER: com.mysql.cj.jdbc.Driver

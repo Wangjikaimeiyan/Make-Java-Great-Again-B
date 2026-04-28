@@ -1,4 +1,14 @@
 spring:
+#  redis数据库配置
+  data:
+    redis:
+#      链接数据库
+      host: localhost
+#      端口
+      port: 6379
+      password: 123456789
+#      几号数据库，一共16个
+      database: 3
   application:
     name: dining_manage
   #mysql连接配置
