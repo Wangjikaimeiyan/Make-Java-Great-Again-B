@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.IOException;
 
 @Slf4j
-@WebFilter(value = "/*",asyncSupported = true)/* 拦截所有请求 */
+//@WebFilter(value = "/*",asyncSupported = true)/* 拦截所有请求 */
 public class TokenFilter implements Filter {
     //    拦截请求, 处理业务逻辑
     @Override
