@@ -48,6 +48,10 @@ aliyun:
     endpoint: https://oss-cn-beijing.aliyuncs.com
     bucketName: java-date
     region: cn-beijing
+#微信配置
+wx:
+  appid: wxc9a3132a80a47a08
+  secret: 9efcf31631b634ce22a12366e8264c18
 
 
 
