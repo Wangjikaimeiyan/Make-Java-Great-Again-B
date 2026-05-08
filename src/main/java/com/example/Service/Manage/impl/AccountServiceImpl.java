@@ -1,5 +1,5 @@
 package com.example.Service.Manage.impl;
-import com.example.Mapper.AccountMapper;
+import com.example.Mapper.Manage.AccountMapper;
 import com.example.Pojo.Account;
 import com.example.Pojo.LoginInfo;
 import com.example.Service.Manage.AccountService;

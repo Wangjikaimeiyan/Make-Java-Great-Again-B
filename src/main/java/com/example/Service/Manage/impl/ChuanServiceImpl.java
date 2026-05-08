@@ -1,6 +1,6 @@
 package com.example.Service.Manage.impl;
 
-import com.example.Mapper.ChuanMapper;
+import com.example.Mapper.Manage.ChuanMapper;
 import com.example.Pojo.Dish;
 import com.example.Service.Manage.ChuanService;
 import com.fasterxml.jackson.databind.ObjectMapper;

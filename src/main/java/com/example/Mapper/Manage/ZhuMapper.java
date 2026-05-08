@@ -1,4 +1,4 @@
-package com.example.Mapper;
+package com.example.Mapper.Manage;
 
 import com.example.Pojo.Dish;
 import org.apache.ibatis.annotations.*;

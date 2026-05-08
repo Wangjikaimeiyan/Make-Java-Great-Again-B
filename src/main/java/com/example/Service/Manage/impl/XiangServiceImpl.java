@@ -1,6 +1,6 @@
 package com.example.Service.Manage.impl;
 
-import com.example.Mapper.XiangMapper;
+import com.example.Mapper.Manage.XiangMapper;
 import com.example.Pojo.Dish;
 import com.example.Service.Manage.XiangService;
 import com.fasterxml.jackson.databind.ObjectMapper;

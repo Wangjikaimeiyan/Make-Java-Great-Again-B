@@ -1,7 +1,7 @@
 package com.example.Service.Manage.impl;
 
 import com.example.Pojo.Dish;
-import com.example.Mapper.LuMapper;
+import com.example.Mapper.Manage.LuMapper;
 import com.example.Service.Manage.LuService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.example.Mapper;
+package com.example.Mapper.Manage;
 
 import com.example.Pojo.Account;
 import org.apache.ibatis.annotations.Mapper;

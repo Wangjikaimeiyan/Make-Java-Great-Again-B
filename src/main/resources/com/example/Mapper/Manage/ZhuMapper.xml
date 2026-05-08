@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.Mapper.ChuanMapper">
+<mapper namespace="com.example.Mapper.Manage.ZhuMapper">
     <update id="updateDish" parameterType="com.example.Pojo.Dish">
         update dish
         <set>
@@ -16,7 +16,7 @@
         where id = #{id}
     </update>
 
-    <!--搜索所有菜品,按照价格升序排列和名字-->
+    <!--搜索主食 category=4-->
     <select id="searchDishes" resultType="com.example.Pojo.Dish">
         SELECT
         id,
@@ -29,7 +29,7 @@
         update_time
         FROM dining_db.dish
         <where>
-            and category = 1
+            and category = 4
             <if test="name != null and name != ''">
                 and name like concat('%', #{name}, '%')
             </if>
