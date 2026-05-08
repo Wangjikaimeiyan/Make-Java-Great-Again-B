@@ -32,6 +32,9 @@ public class WxLoginController {
         log.info("微信登录");
         String code = dto.getCode();
         log.info("code:{}", code);
+        log.info("nickName:{}",dto.getNickName());
+        log.info("url:{}", dto.getUrl());
+
 
         // 工具类，拿到openid
         String openid = WxCodeCheck.getOpenidByCode(code, restTemplate);
@@ -40,6 +43,10 @@ public class WxLoginController {
             return Result.error("微信授权失败，请重试");
         }
         log.info("用户openid:{}", openid);
+//        将openid作为唯一标识写入数据库
+//          TODO
+
+
         // 封装claim
         Map<String, Object> claims = new HashMap<>();
         claims.put("openid", openid);

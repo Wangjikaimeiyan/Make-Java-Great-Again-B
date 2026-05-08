@@ -1,8 +1,8 @@
-package com.example.Service.impl;
+package com.example.Service.Manage.impl;
 
 import com.example.Pojo.Dish;
 import com.example.Mapper.ZhuMapper;
-import com.example.Service.ZhuService;
+import com.example.Service.Manage.ZhuService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;

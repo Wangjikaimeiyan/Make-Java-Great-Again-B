@@ -2,7 +2,7 @@ package com.example.Controller.Manage;
 
 import com.example.Pojo.Dish;
 import com.example.Pojo.Result;
-import com.example.Service.LuService;
+import com.example.Service.Manage.LuService;
 import com.example.Utils.AliyunOSSOperator;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

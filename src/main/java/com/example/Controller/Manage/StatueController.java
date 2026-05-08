@@ -1,7 +1,7 @@
 package com.example.Controller.Manage;
 
 import com.example.Pojo.Result;
-import com.example.Service.StatueService;
+import com.example.Service.Manage.StatueService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;

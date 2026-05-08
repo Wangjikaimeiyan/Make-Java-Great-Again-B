@@ -1,9 +1,8 @@
-package com.example.Service.impl;
+package com.example.Service.Manage.impl;
 
-import com.example.Config.AiConfig;
 import com.example.Mapper.ChuanMapper;
 import com.example.Pojo.Dish;
-import com.example.Service.ChuanService;
+import com.example.Service.Manage.ChuanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;

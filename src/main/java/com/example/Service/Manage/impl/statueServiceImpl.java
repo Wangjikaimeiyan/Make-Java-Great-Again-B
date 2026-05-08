@@ -1,6 +1,6 @@
-package com.example.Service.impl;
+package com.example.Service.Manage.impl;
 
-import com.example.Service.StatueService;
+import com.example.Service.Manage.StatueService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

@@ -1,4 +1,4 @@
-package com.example.Service;
+package com.example.Service.Manage;
 
 //
 public interface StatueService {

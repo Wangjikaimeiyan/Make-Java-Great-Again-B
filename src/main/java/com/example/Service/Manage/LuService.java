@@ -1,4 +1,4 @@
-package com.example.Service;
+package com.example.Service.Manage;
 
 import com.example.Pojo.Dish;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
@@ -6,8 +6,8 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import java.math.BigDecimal;
 import java.util.List;
 
-public interface XiangService {
-    //    查询所川菜品
+public interface LuService {
+    //    查询所有鲁菜品
     List<Dish> searchAllDishes();
     //     ai分析菜品
     void aiChat(String question, SseEmitter sseEmitter);

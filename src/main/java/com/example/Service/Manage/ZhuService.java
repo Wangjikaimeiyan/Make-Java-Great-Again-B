@@ -1,4 +1,4 @@
-package com.example.Service;
+package com.example.Service.Manage;
 
 import com.example.Pojo.Dish;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
