@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.Mapper.WxApp.WxUserMapper">
+
+    <!-- 1. 根据 openid 查询用户 -->
+    <select id="selectByOpenid" parameterType="string" resultType="com.example.Pojo.WxUser">
+        SELECT id, nick_name, url, openid, create_time, update_time, status
+        FROM wx_user
+        WHERE openid = #{openid}
+    </select>
+
+    <!-- 2. 新增用户 补上 create_time update_time -->
+    <insert id="insertWxUser" parameterType="com.example.Pojo.WxUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO wx_user (nick_name, url, openid, status, create_time, update_time)
+        VALUES (#{nickName}, #{url}, #{openid}, #{status}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!-- 3. 更新用户 只补 update_time -->
+    <update id="updateWxUser" parameterType="com.example.Pojo.WxUser">
+        UPDATE wx_user
+        SET nick_name = #{nickName},
+            url = #{url},
+            update_time = #{updateTime}
+        WHERE id = #{id}
+    </update>
+
+</mapper>

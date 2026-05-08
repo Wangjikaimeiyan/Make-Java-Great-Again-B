@@ -1,8 +1,9 @@
 package com.example.Controller.WxApp;
 
-import com.alibaba.fastjson.JSONObject;
 import com.example.Pojo.Result;
 import com.example.Pojo.WxLoginDTO;
+import com.example.Pojo.WxUser;
+import com.example.Service.WxApp.WxLoginService;
 import com.example.Utils.JwtUtils;
 import com.example.Utils.WxCodeCheck;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -13,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 
 import java.util.HashMap;
 
-import static com.fasterxml.jackson.databind.type.LogicalType.Map;
 
 @Slf4j
 @RestController
@@ -25,6 +26,8 @@ import static com.fasterxml.jackson.databind.type.LogicalType.Map;
 public class WxLoginController {
     @Autowired
     private RestTemplate restTemplate;
+    @Autowired
+    private WxLoginService wxLoginService;
 
     // 微信登录
     @PostMapping("/WxUser/Login")
@@ -44,9 +47,13 @@ public class WxLoginController {
         }
         log.info("用户openid:{}", openid);
 //        将openid作为唯一标识写入数据库
-//          TODO
-
-
+//        封装WxUser
+        WxUser wxUser = new WxUser();
+        wxUser.setOpenid(openid);
+        wxUser.setNickName(dto.getNickName());
+        wxUser.setUrl(dto.getUrl());
+//        调用Service层
+        wxLoginService.saveWxUser(wxUser);
         // 封装claim
         Map<String, Object> claims = new HashMap<>();
         claims.put("openid", openid);

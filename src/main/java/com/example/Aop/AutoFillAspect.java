@@ -22,7 +22,9 @@ public class AutoFillAspect {
     /**
      * 切入点：拦截 mapper 包下所有方法，且标注了 @AutoFill 注解
      */
-    @Pointcut("execution(* com.example.Mapper.*.*(..)) && @annotation(com.example.annotation.AutoFill)")
+//    @Pointcut("execution(* com.example.Mapper.*.*(..)) && @annotation(com.example.annotation.AutoFill)")
+    // .. 代表当前包及所有子包任意层级
+    @Pointcut("execution(* com.example.Mapper..*.*(..)) && @annotation(com.example.annotation.AutoFill)")
     public void autoFillPointCut() {}
 
     /**

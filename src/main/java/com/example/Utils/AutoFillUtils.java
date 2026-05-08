@@ -73,8 +73,9 @@ public class AutoFillUtils {
 //        Method setUpdateUser = getSetMethod(entity, AutoFillConstant.SET_UPDATE_USER, Long.class);
 
         // 反射调用赋值
+        log.info("更新时间：{}", now);
         invokeSetMethod(setUpdateTime, entity, now);
-//        invokeSetMethod(setUpdateUser, entity, userId);
+//        invokeSetMethod(setUpdateUser, entity, userId);/
     }
 
     /**
