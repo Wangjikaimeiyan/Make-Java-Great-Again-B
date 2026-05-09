@@ -13,6 +13,7 @@ public class JwtUtils {
 
     private static final String signKey = "X+3k9ZpQ7sL8aG2bN1cV5dF8gH0jK3lM6nO9pR2tU5vW7yZ1bC3e";
     private static final Long expire = 12 * 60 * 60 * 1000L;/* 令牌过期时间 12小时 */
+//    private static final Long expire = 10 * 1000L;/* 令牌过期时间 12小时 */
 
     /**
      * 生成JWT令牌
