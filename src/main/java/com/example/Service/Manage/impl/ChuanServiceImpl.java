@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
@@ -83,11 +84,12 @@ public class ChuanServiceImpl implements ChuanService {
 //    新增菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "allDishes", key = "'allDishes'")
     public void addDish(Dish dish) {
         log.info("新增菜品"+"ChuanServiceImpl");
         chuanMapper.addDish(dish);
 //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+//        cleanCache.cleanCache("allDishes");
 //        throw new RuntimeException("测试事务");
         log.info("新增菜品成功"+"ChuanServiceImpl");
     }
