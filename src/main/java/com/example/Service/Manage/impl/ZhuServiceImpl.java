@@ -3,6 +3,7 @@ package com.example.Service.Manage.impl;
 import com.example.Pojo.Dish;
 import com.example.Mapper.Manage.ZhuMapper;
 import com.example.Service.Manage.ZhuService;
+import com.example.Utils.CleanCache;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
@@ -24,7 +25,8 @@ public class ZhuServiceImpl implements ZhuService {
     private ObjectMapper objectMapper;
     @Autowired
     private ChatClient chatClient;
-
+    @Autowired
+    private CleanCache cleanCache;
     // 查询全部主食
     @Override
     public List<Dish> searchAllDishes() {
@@ -75,6 +77,8 @@ public class ZhuServiceImpl implements ZhuService {
     public void addDish(Dish dish) {
         log.info("新增菜品"+"ZhuServiceImpl");
         zhuMapper.addDish(dish);
+        //        清空redis缓存
+        cleanCache.cleanCache("allDishes");
         log.info("新增菜品成功"+"ZhuServiceImpl");
     }
 
@@ -84,6 +88,8 @@ public class ZhuServiceImpl implements ZhuService {
     public void updateDish(Dish dish) {
         log.info("修改菜品"+"ZhuServiceImpl");
         zhuMapper.updateDish(dish);
+        //        清空redis缓存
+        cleanCache.cleanCache("allDishes");
         log.info("修改菜品成功"+"ZhuServiceImpl");
     }
 
@@ -93,6 +99,8 @@ public class ZhuServiceImpl implements ZhuService {
     public void deleteDish(Integer id) {
         log.info("删除菜品"+"ZhuServiceImpl");
         zhuMapper.deleteDish(id);
+        //        清空redis缓存
+        cleanCache.cleanCache("allDishes");
         log.info("删除菜品成功"+"ZhuServiceImpl");
     }
 

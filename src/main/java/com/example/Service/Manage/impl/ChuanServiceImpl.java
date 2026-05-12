@@ -3,6 +3,7 @@ package com.example.Service.Manage.impl;
 import com.example.Mapper.Manage.ChuanMapper;
 import com.example.Pojo.Dish;
 import com.example.Service.Manage.ChuanService;
+import com.example.Utils.CleanCache;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
@@ -24,7 +25,8 @@ public class ChuanServiceImpl implements ChuanService {
     private ObjectMapper objectMapper;
     @Autowired
     private ChatClient chatClient;
-
+    @Autowired
+    private CleanCache cleanCache;
 
     //  查询全部川菜
     @Override
@@ -84,6 +86,8 @@ public class ChuanServiceImpl implements ChuanService {
     public void addDish(Dish dish) {
         log.info("新增菜品"+"ChuanServiceImpl");
         chuanMapper.addDish(dish);
+//        清空redis缓存
+        cleanCache.cleanCache("allDishes");
 //        throw new RuntimeException("测试事务");
         log.info("新增菜品成功"+"ChuanServiceImpl");
     }
@@ -93,6 +97,8 @@ public class ChuanServiceImpl implements ChuanService {
     public void updateDish(Dish dish) {
         log.info("修改菜品"+"ChuanServiceImpl");
         chuanMapper.updateDish(dish);
+//        清空redis缓存
+        cleanCache.cleanCache("allDishes");
         log.info("修改菜品成功"+"ChuanServiceImpl");
     }
 
@@ -102,6 +108,8 @@ public class ChuanServiceImpl implements ChuanService {
     public void deleteDish(Integer id) {
         log.info("删除菜品"+"ChuanServiceImpl");
         chuanMapper.deleteDish(id);
+        //        清空redis缓存
+        cleanCache.cleanCache("allDishes");
         log.info("删除菜品成功"+"ChuanServiceImpl");
     }
 
