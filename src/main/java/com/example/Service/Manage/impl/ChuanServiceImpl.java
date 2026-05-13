@@ -84,24 +84,26 @@ public class ChuanServiceImpl implements ChuanService {
 //    新增菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
-    @CacheEvict(value = "allDishes", key = "'allDishes'")
+    @CacheEvict(value = "Dish", key = "'all'")
     public void addDish(Dish dish) {
         log.info("新增菜品"+"ChuanServiceImpl");
         chuanMapper.addDish(dish);
 //        清空redis缓存
-//        cleanCache.cleanCache("allDishes");
+//        cleanCache.cleanCache("Dish::all");
 //        throw new RuntimeException("测试事务");
         log.info("新增菜品成功"+"ChuanServiceImpl");
     }
-//      修改菜品
+
+    //      修改菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish", key = "'all'")
     public void updateDish(Dish dish) {
-        log.info("修改菜品"+"ChuanServiceImpl");
+        log.info("修改菜品" + "ChuanServiceImpl");
         chuanMapper.updateDish(dish);
 //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
-        log.info("修改菜品成功"+"ChuanServiceImpl");
+//        cleanCache.cleanCache("Dish::all");
+        log.info("修改菜品成功" + "ChuanServiceImpl");
     }
 
 //    删除菜品
@@ -111,7 +113,7 @@ public class ChuanServiceImpl implements ChuanService {
         log.info("删除菜品"+"ChuanServiceImpl");
         chuanMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"ChuanServiceImpl");
     }
 

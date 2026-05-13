@@ -16,10 +16,11 @@ public class RedisConfig {
     @Bean
     public RedisCacheManager cacheManager(RedisConnectionFactory factory) {
         RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig()
-                .disableKeyPrefix() // 关闭前缀，key保持 allDishes
+                // 关闭前缀，key保持 allDishes
+//                .disableKeyPrefix()
                 // 强制使用JSON序列化，和你RedisTemplate保持一致，解决Dish序列化报错
-                .serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer()))
-                .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new GenericJackson2JsonRedisSerializer()));
+                .serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer()))/*作用：缓存key的序列化方式*/
+                .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new GenericJackson2JsonRedisSerializer()));/*作用：缓存value的序列化方式*/
 
         return RedisCacheManager.builder(factory)
                 .cacheDefaults(config)

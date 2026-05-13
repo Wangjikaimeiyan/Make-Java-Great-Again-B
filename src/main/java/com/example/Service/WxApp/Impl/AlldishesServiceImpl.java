@@ -22,7 +22,7 @@ public class AlldishesServiceImpl implements AlldishesService {
 
 //    查询所有菜品
     @Override
-    @Cacheable(value = "allDishes", key = "'allDishes'")
+    @Cacheable(value = "Dish", key = "'all'")
     public List<Dish> searchAllDishes() {
 //      调用Mapper层
         log.info("查询所有菜品");

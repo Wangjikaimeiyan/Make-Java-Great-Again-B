@@ -78,7 +78,7 @@ public class ZhuServiceImpl implements ZhuService {
         log.info("新增菜品"+"ZhuServiceImpl");
         zhuMapper.addDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("新增菜品成功"+"ZhuServiceImpl");
     }
 
@@ -89,7 +89,7 @@ public class ZhuServiceImpl implements ZhuService {
         log.info("修改菜品"+"ZhuServiceImpl");
         zhuMapper.updateDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("修改菜品成功"+"ZhuServiceImpl");
     }
 
@@ -100,7 +100,7 @@ public class ZhuServiceImpl implements ZhuService {
         log.info("删除菜品"+"ZhuServiceImpl");
         zhuMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"ZhuServiceImpl");
     }
 

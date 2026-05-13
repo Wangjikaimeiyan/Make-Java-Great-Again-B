@@ -87,7 +87,7 @@ public class LuServiceImpl implements LuService {
         log.info("新增菜品"+"LuServiceImpl");
         luMapper.addDish(dish);
 //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
 //        throw new RuntimeException("测试事务");
         log.info("新增菜品成功"+"LuServiceImpl");
     }
@@ -98,7 +98,6 @@ public class LuServiceImpl implements LuService {
         log.info("修改菜品"+"LuServiceImpl");
         luMapper.updateDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
         log.info("修改菜品成功"+"LuServiceImpl");
     }
 
@@ -109,7 +108,7 @@ public class LuServiceImpl implements LuService {
         log.info("删除菜品"+"LuServiceImpl");
         luMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"LuServiceImpl");
     }
 

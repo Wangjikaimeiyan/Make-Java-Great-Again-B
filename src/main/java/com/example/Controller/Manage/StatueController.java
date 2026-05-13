@@ -28,7 +28,8 @@ public class StatueController {
         // statue 接收前端 0 / 1
         // 核心：调用service更新数据库状态
         log.info("修改营业状态：{}", statue);
-        statueService.updateStatue(statue);
+        Integer statue1 = statueService.updateStatue(statue);
+        log.info("营业状态已经修改为{}", statue1);
         log.info("✅ 营业状态修改成功");
         return Result.success("修改成功");
     }

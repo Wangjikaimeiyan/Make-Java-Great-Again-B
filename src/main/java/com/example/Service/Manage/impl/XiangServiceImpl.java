@@ -87,7 +87,7 @@ public class XiangServiceImpl implements XiangService {
         log.info("新增菜品"+"XiangServiceImpl");
         xiangMapper.addDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
 //        throw new RuntimeException("测试事务");
         log.info("新增菜品成功"+"XiangServiceImpl");
     }
@@ -98,7 +98,7 @@ public class XiangServiceImpl implements XiangService {
         log.info("修改菜品"+"XiangServiceImpl");
         xiangMapper.updateDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("修改菜品成功"+"XiangServiceImpl");
     }
 
@@ -109,7 +109,7 @@ public class XiangServiceImpl implements XiangService {
         log.info("删除菜品"+"XiangServiceImpl");
         xiangMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("allDishes");
+        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"XiangServiceImpl");
     }
 
