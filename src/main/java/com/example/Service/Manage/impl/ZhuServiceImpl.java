@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
@@ -74,33 +75,36 @@ public class ZhuServiceImpl implements ZhuService {
     // 新增
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish",allEntries = true)
     public void addDish(Dish dish) {
         log.info("新增菜品"+"ZhuServiceImpl");
         zhuMapper.addDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("Dish::all");
+//        cleanCache.cleanCache("Dish::all");
         log.info("新增菜品成功"+"ZhuServiceImpl");
     }
 
     // 修改
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish",allEntries = true)
     public void updateDish(Dish dish) {
         log.info("修改菜品"+"ZhuServiceImpl");
         zhuMapper.updateDish(dish);
         //        清空redis缓存
-        cleanCache.cleanCache("Dish::all");
+//        cleanCache.cleanCache("Dish::all");
         log.info("修改菜品成功"+"ZhuServiceImpl");
     }
 
     // 删除
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish",allEntries = true)
     public void deleteDish(Integer id) {
         log.info("删除菜品"+"ZhuServiceImpl");
         zhuMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("Dish::all");
+//        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"ZhuServiceImpl");
     }
 

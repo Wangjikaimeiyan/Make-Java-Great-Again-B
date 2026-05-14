@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
@@ -83,17 +84,19 @@ public class LuServiceImpl implements LuService {
     //    新增菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish",allEntries = true)
     public void addDish(Dish dish) {
         log.info("新增菜品"+"LuServiceImpl");
         luMapper.addDish(dish);
 //        清空redis缓存
-        cleanCache.cleanCache("Dish::all");
+//        cleanCache.cleanCache("Dish::all");
 //        throw new RuntimeException("测试事务");
         log.info("新增菜品成功"+"LuServiceImpl");
     }
     //      修改菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish",allEntries = true)
     public void updateDish(Dish dish) {
         log.info("修改菜品"+"LuServiceImpl");
         luMapper.updateDish(dish);
@@ -104,11 +107,12 @@ public class LuServiceImpl implements LuService {
     //    删除菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish",allEntries = true)
     public void deleteDish(Integer id) {
         log.info("删除菜品"+"LuServiceImpl");
         luMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("Dish::all");
+//        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"LuServiceImpl");
     }
 

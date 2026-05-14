@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.Mapper.WxApp.WxOrderMapper">
+    <insert id="insertOrder" parameterType="com.example.Pojo.Orders">
+        INSERT INTO orders (user_id, order_id, all_price, status, create_time, pay_time, remark)
+        VALUES (#{userId}, #{orderId}, #{allPrice}, #{status}, #{createTime}, #{payTime}, #{remark})
+    </insert>
+
+
+    <insert id="insertOrderDetails" parameterType="java.util.ArrayList">
+        INSERT INTO order_details (order_id, dish_id, price, num, subtotal)
+        VALUES
+        <foreach collection="details" item="detail" separator=",">
+            (#{detail.orderId}, #{detail.dishId}, #{detail.price}, #{detail.num}, #{detail.subtotal})
+        </foreach>
+    </insert>
+</mapper>
+

@@ -40,4 +40,13 @@ public class AlldishesServiceImpl implements AlldishesService {
 //        redisTemplate.opsForValue().set(key, dishes);
         return dishes;
     }
+
+    @Override
+    @Cacheable(value = "Dish", key = "#id")
+    public Dish searchDishById(Integer id) {
+        log.info("查询菜品id为{}的菜品", id);
+        Dish dish = alldishesMapper.searchDishById(id);
+//        存入redis
+        return dish;
+    }
 }

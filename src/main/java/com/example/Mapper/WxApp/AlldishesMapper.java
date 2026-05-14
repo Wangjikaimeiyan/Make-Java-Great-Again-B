@@ -9,5 +9,7 @@ import java.util.List;
 @Mapper
 public interface AlldishesMapper {
     @Select("select id,name,price,detail,image,category from dish")
-    public List<Dish> searchAllDishes();
+    List<Dish> searchAllDishes();
+    @Select("select id,name,price,detail,image,category from dish where id=#{id}")
+    Dish searchDishById(Integer id);
 }

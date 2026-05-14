@@ -84,7 +84,7 @@ public class ChuanServiceImpl implements ChuanService {
 //    新增菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
-    @CacheEvict(value = "Dish", key = "'all'")
+    @CacheEvict(value = "Dish", allEntries = true)
     public void addDish(Dish dish) {
         log.info("新增菜品"+"ChuanServiceImpl");
         chuanMapper.addDish(dish);
@@ -97,7 +97,7 @@ public class ChuanServiceImpl implements ChuanService {
     //      修改菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
-    @CacheEvict(value = "Dish", key = "'all'")
+    @CacheEvict(value = "Dish", allEntries = true)
     public void updateDish(Dish dish) {
         log.info("修改菜品" + "ChuanServiceImpl");
         chuanMapper.updateDish(dish);
@@ -109,11 +109,11 @@ public class ChuanServiceImpl implements ChuanService {
 //    删除菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
+    @CacheEvict(value = "Dish", allEntries = true)
     public void deleteDish(Integer id) {
         log.info("删除菜品"+"ChuanServiceImpl");
         chuanMapper.deleteDish(id);
         //        清空redis缓存
-        cleanCache.cleanCache("Dish::all");
         log.info("删除菜品成功"+"ChuanServiceImpl");
     }
 
