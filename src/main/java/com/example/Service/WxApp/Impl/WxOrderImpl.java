@@ -45,11 +45,17 @@ public class WxOrderImpl implements WxOrder {
             Integer count = entry.getValue();// 数量
             orderDetails.setNum(count);// 数量
 //          获取菜的单价,根据菜品id查询
-            Dish dish = alldishesService.searchDishById(Integer.parseInt(dishid));// 获取菜的单价
+            Dish dish = alldishesService.searchDishById(Integer.parseInt(dishid));// 获取菜的全部信息
+            if(dish == null){
+//                TODO
+                throw new RuntimeException("菜品不存在");
+            }
             BigDecimal price = dish.getPrice();// 单价
             orderDetails.setPrice(price);// 单价
             BigDecimal subtotal = price.multiply(new BigDecimal(count));// 小计
             orderDetails.setSubtotal(subtotal);// 小计
+            orderDetails.setDishName(dish.getName());// 菜品名称
+            orderDetails.setDishImg(dish.getImage());// 菜品图片
             log.info("菜品id:{}，数量:{},价格{}", dishid, count, price);
             //        将orderDetails添加到集合中
             details.add(orderDetails);

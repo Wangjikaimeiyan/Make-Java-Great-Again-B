@@ -10,11 +10,12 @@
 
 
     <insert id="insertOrderDetails" parameterType="java.util.ArrayList">
-        INSERT INTO order_details (order_id, dish_id, price, num, subtotal)
+        INSERT INTO order_details (order_id, dish_id, dish_name, dish_img, price, num, subtotal)
         VALUES
         <foreach collection="details" item="detail" separator=",">
-            (#{detail.orderId}, #{detail.dishId}, #{detail.price}, #{detail.num}, #{detail.subtotal})
+            (#{detail.orderId}, #{detail.dishId}, #{detail.dishName}, #{detail.dishImg}, #{detail.price}, #{detail.num}, #{detail.subtotal})
         </foreach>
     </insert>
+
 </mapper>
 
