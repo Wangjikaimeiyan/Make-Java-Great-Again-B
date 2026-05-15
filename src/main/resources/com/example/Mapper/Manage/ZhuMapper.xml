@@ -3,6 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.Mapper.Manage.ZhuMapper">
+
+    <!-- 新增主食，同时初始化销量记录 -->
+    <insert id="addDish" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO dish(name,price,detail,image,category,create_time,update_time)
+        VALUES (#{name},#{price},#{detail},#{image},#{category},#{createTime},#{updateTime});
+
+        INSERT INTO dish_sale(dish_id, sale_count)
+        VALUES(#{id}, 0);
+    </insert>
+
+    <!-- 修改主食 -->
     <update id="updateDish" parameterType="com.example.Pojo.Dish">
         update dish
         <set>
@@ -16,7 +27,13 @@
         where id = #{id}
     </update>
 
-    <!--搜索主食 category=4-->
+    <!-- 删除主食，先删销量再删菜品 -->
+    <delete id="deleteDish">
+        DELETE FROM dish_sale WHERE dish_id = #{id};
+        DELETE FROM dish WHERE id = #{id};
+    </delete>
+
+    <!-- 搜索主食，按价格升序，支持名称模糊和价格上限 -->
     <select id="searchDishes" resultType="com.example.Pojo.Dish">
         SELECT
         id,
@@ -27,7 +44,7 @@
         category,
         create_time,
         update_time
-        FROM dining_db.dish
+        FROM dish
         <where>
             and category = 4
             <if test="name != null and name != ''">
@@ -39,4 +56,5 @@
         </where>
         order by price asc
     </select>
+
 </mapper>

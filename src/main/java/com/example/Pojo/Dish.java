@@ -19,4 +19,6 @@ public class Dish {
     private int category;/*分类1234川·湘·鲁·主食*/
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
+//    销量
+    private int sales;
 }
