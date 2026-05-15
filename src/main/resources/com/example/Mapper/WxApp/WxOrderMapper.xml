@@ -17,5 +17,11 @@
         </foreach>
     </insert>
 
+    <!-- 累加菜品销量 -->
+    <update id="updateSales">
+        UPDATE dish_sale
+        SET sale_count = sale_count + #{count}
+        WHERE dish_id = #{dishId}
+    </update>
 </mapper>
 

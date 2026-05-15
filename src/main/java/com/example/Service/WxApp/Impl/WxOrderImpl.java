@@ -56,6 +56,8 @@ public class WxOrderImpl implements WxOrder {
             orderDetails.setDishName(dish.getName());// 菜品名称
             orderDetails.setDishImg(dish.getImage());// 菜品图片
             log.info("菜品id:{}，数量:{},价格{}", dishid, count, price);
+//            更新销量
+            wxOrderMapper.updateSales(dishid, count);
             //        将orderDetails添加到集合中
             details.add(orderDetails);
         }
