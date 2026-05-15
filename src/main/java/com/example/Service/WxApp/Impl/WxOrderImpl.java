@@ -1,16 +1,14 @@
 package com.example.Service.WxApp.Impl;
 
 import com.example.Mapper.WxApp.WxOrderMapper;
-import com.example.Pojo.Dish;
-import com.example.Pojo.OrderDetails;
-import com.example.Pojo.OrderSubmitDTO;
-import com.example.Pojo.Orders;
+import com.example.Pojo.*;
 import com.example.Service.WxApp.AlldishesService;
 import com.example.Service.WxApp.WxOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -26,7 +24,7 @@ public class WxOrderImpl implements WxOrder {
     private WxOrderMapper wxOrderMapper;
     @Override
     @Transactional//事务
-    public String order(OrderSubmitDTO dto) {
+    public Result order(OrderSubmitDTO dto) {
 //        解析订单信息
         log.info("解析订单信息");
         String openid = dto.getOpenid();// 用户openid
@@ -47,8 +45,9 @@ public class WxOrderImpl implements WxOrder {
 //          获取菜的单价,根据菜品id查询
             Dish dish = alldishesService.searchDishById(Integer.parseInt(dishid));// 获取菜的全部信息
             if(dish == null){
-//                TODO
-                throw new RuntimeException("菜品不存在");
+//                手动回滚事务
+                TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+                return Result.error("菜品不存在");
             }
             BigDecimal price = dish.getPrice();// 单价
             orderDetails.setPrice(price);// 单价
@@ -74,7 +73,7 @@ public class WxOrderImpl implements WxOrder {
         wxOrderMapper.insertOrder(order);
         log.info("插入订单详情");
         wxOrderMapper.insertOrderDetails(details);
-//        TODO:稍后改为Result
-        return "";
+//        TODO:稍后改为Result，
+        return Result.success("Test");
     }
 }

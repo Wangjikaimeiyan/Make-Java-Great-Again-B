@@ -47,8 +47,7 @@ public class WxOrderController {
         }
         log.info("{}{}{}",dto.getOpenid(),dto.getRemark(),dto.getDishidCounts());
 //        调用Service层下单逻辑
-        String details = wxOrder.order(dto);
-        return Result.success(details);
+        return (wxOrder.order(dto));
     }
 //    TODO: 订单查询逻辑
 

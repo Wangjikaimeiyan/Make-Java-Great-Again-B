@@ -34,4 +34,22 @@ public class Result {
         return result;
     }
 
+    public static Result error(Object object, String msg) {
+        Result result = new Result();
+        result.data = object;
+        result.msg = msg;
+        result.code = 0;
+        return result;
+    }
+
+
+    public static Result error(Object object) {
+        Result result = new Result();
+        result.data = object;
+        result.msg = "error";
+        result.code = 0;
+        return result;
+    }
+
+
 }
