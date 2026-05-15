@@ -49,9 +49,7 @@
     <insert id="addDish" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO dish(name,price,detail,image,category,create_time,update_time)
         VALUES (#{name},#{price},#{detail},#{image},#{category},#{createTime},#{updateTime});
-
-        INSERT INTO dish_sale(dish_id, sale_count)
-        VALUES(#{id}, 0);
     </insert>
+
 
 </mapper>

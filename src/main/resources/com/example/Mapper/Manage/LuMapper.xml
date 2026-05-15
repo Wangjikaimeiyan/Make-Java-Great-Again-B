@@ -4,16 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.Mapper.Manage.LuMapper">
 
-    <!-- 新增菜品，同时初始化销量记录 -->
-    <insert id="addDish" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO dish(name,price,detail,image,category,create_time,update_time)
-        VALUES (#{name},#{price},#{detail},#{image},#{category},#{createTime},#{updateTime});
-
-        INSERT INTO dish_sale(dish_id, sale_count)
-        VALUES(#{id}, 0);
-    </insert>
-
-    <!-- 修改菜品 -->
     <update id="updateDish" parameterType="com.example.Pojo.Dish">
         update dish
         <set>
@@ -26,14 +16,13 @@
         </set>
         where id = #{id}
     </update>
-
-    <!-- 删除菜品，先删销量再删菜品 -->
     <delete id="deleteDish">
         DELETE FROM dish_sale WHERE dish_id = #{id};
         DELETE FROM dish WHERE id = #{id};
     </delete>
 
-    <!-- 搜索菜品，按价格升序，支持名称模糊和价格上限 -->
+
+    <!--搜索所有菜品,按照价格升序排列和名字-->
     <select id="searchDishes" resultType="com.example.Pojo.Dish">
         SELECT
         id,
@@ -56,5 +45,10 @@
         </where>
         order by price asc
     </select>
+
+    <insert id="addDish" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO dish(name,price,detail,image,category,create_time,update_time)
+        VALUES (#{name},#{price},#{detail},#{image},#{category},#{createTime},#{updateTime});
+    </insert>
 
 </mapper>

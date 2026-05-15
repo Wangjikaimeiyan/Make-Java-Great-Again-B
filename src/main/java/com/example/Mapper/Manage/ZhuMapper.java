@@ -1,7 +1,12 @@
 package com.example.Mapper.Manage;
 
 import com.example.Pojo.Dish;
-import org.apache.ibatis.annotations.*;
+import com.example.annotation.AutoFill;
+import com.example.enumrtation.OperationType;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -29,7 +34,8 @@ public interface ZhuMapper {
     // 新增（XML实现）
     void addDish(Dish dish);
 
-    // 修改（XML实现）
+    // 修改 补自动填充注解
+    @AutoFill(value = OperationType.UPDATE)
     void updateDish(Dish dish);
 
     // 删除（XML实现）
@@ -37,4 +43,8 @@ public interface ZhuMapper {
 
     // 条件搜索（XML实现）
     List<Dish> searchDishes(String name, BigDecimal price);
+
+    // 初始化销量插入，统一格式
+    @Insert("INSERT INTO dish_sale(dish_id,sale_count) VALUES(#{id},#{count})")
+    void addSaleCount(@Param("id") Integer id, @Param("count") Integer count);
 }

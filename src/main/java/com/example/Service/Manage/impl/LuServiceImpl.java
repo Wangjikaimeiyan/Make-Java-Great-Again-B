@@ -82,16 +82,15 @@ public class LuServiceImpl implements LuService {
     }
 
     //    新增菜品
+    //    新增菜品
     @Override
     @Transactional(rollbackFor = {Exception.class})
-    @CacheEvict(value = "Dish",allEntries = true)
+    @CacheEvict(value = "Dish", allEntries = true)
     public void addDish(Dish dish) {
-        log.info("新增菜品"+"LuServiceImpl");
-        luMapper.addDish(dish);
-//        清空redis缓存
-//        cleanCache.cleanCache("Dish::all");
-//        throw new RuntimeException("测试事务");
-        log.info("新增菜品成功"+"LuServiceImpl");
+        log.info("新增菜品" + "ChuanServiceImpl");
+        luMapper.addDish(dish); // 这一步自动把ID回填到 dish 对象里
+        luMapper.addSaleCount(dish.getId(), 0); // 拿对象的id，不要接收返回值
+        log.info("新增菜品成功" + "ChuanServiceImpl");
     }
     //      修改菜品
     @Override

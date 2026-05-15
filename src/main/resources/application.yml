@@ -14,7 +14,7 @@ spring:
   #mysql连接配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/dining_db
+    url: jdbc:mysql://localhost:3306/dining_db?allowMultiQueries=true
     username: root
     password: 5678
   servlet:
@@ -36,6 +36,7 @@ mybatis:
     map-underscore-to-camel-case: true
     #    显示sql
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 
 #日志
 logging:

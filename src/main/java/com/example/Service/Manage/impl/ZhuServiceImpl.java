@@ -75,13 +75,12 @@ public class ZhuServiceImpl implements ZhuService {
     // 新增
     @Override
     @Transactional(rollbackFor = {Exception.class})
-    @CacheEvict(value = "Dish",allEntries = true)
+    @CacheEvict(value = "Dish", allEntries = true)
     public void addDish(Dish dish) {
-        log.info("新增菜品"+"ZhuServiceImpl");
-        zhuMapper.addDish(dish);
-        //        清空redis缓存
-//        cleanCache.cleanCache("Dish::all");
-        log.info("新增菜品成功"+"ZhuServiceImpl");
+        log.info("新增菜品" + "ChuanServiceImpl");
+        zhuMapper.addDish(dish); // 这一步自动把ID回填到 dish 对象里
+        zhuMapper.addSaleCount(dish.getId(), 0); // 拿对象的id，不要接收返回值
+        log.info("新增菜品成功" + "ChuanServiceImpl");
     }
 
     // 修改
