@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.Mapper.Manage.OrderMapper">
+
+
+       <select id="allSales" resultType="com.example.Pojo.DishesSales">
+        SELECT d.name, ds.sale_count as sales
+        FROM dish_sale ds
+        JOIN dish d ON ds.dish_id = d.id
+        ORDER BY ds.sale_count DESC
+        LIMIT 10
+    </select>
+
+</mapper>
